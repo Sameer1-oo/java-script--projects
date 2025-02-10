@@ -40,3 +40,20 @@ return
 //   decelaertion of variabel there store value
 //  when we ar not give the value in the brackets  out come with undefined
 
+function calculatecart(...num1 ){
+    return num1
+
+}
+console.log(calculatecart(200,900,2993))
+//  this is give only numb1 rest fo value doesnot print  there we are use restopreter ... this is rest opreter 
+//  this is give a an array
+const user= {
+    username : "sameer jaga ",
+    price : 199
+
+}
+function handleobject(anyobject){
+    console.log(`user is ${anyobject.username} and price ${anyobject.price}`)
+
+}
+handleobject(user)
