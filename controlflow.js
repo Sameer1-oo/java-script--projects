@@ -34,11 +34,20 @@
 // } 
 // // that is method to  exicution of multiple condition many consditon we can  
 
-const userloggedin = true
-const debitcard = true
-if (userloggedin && debitcard) {
-    console.log('allow to buy course')
+// const userloggedin = true
+// const debitcard = true
+// if (userloggedin && debitcard) {
+//     console.log('allow to buy course')
     
-} else {
-    
-}
+// } else {
+// }
+// //  don condyion ko ek sath run kar sakte hai || with help of (||) ya to ye ya to ye wali conditon
+// const userloggedin = true
+// const 
+
+
+
+
+
+
+// **************
