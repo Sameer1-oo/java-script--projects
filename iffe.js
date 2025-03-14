@@ -15,6 +15,6 @@
 //  in this iife function must we need of semi collum
  (function aurcode()  {
     
-    console.log(`db connected` ${name})
+    console.log(`db connected ${name}`)
 
  } ) ("sameer")
