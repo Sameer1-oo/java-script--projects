@@ -3,7 +3,7 @@ const Arrays = [0,1,2,3,true,0,2]
 // collection of multiple obect or elemntens. in a single variable 
 // we are declear arrays in squar brakects [] like that
 // java script resizeable  and mix differnt type of data type .
-// indexig strat ing from zero ,\. 
+// indexig strating from zero ,\. 
 // arrays copy opretions creat showllow copies .shawollo copies refencere depended copies . store in heap memory .
 // deep copies are object dose not share the refefences copies . example of stcak memory 
 // mamny method to decalers arryas in java script 
@@ -16,8 +16,10 @@ console.log(arrays2)
 //  arryas methods
 
 arrays2.push(8)
-
+// adding the elemnt in the last of arrays
 arrays2.pop()
+// removing the last elemnt of arryas
+// without any parameter
 console.log(arrays2);
  arrays2.unshift(2)
  console.log(arrays2)
@@ -29,6 +31,7 @@ console.log(arrays2);
 /* arrays convert into string */
 
 const hello = arrays2.join()
+// maiking the arryas into string and winder the elemnt with comma
 // console.log(hello)
 // console.log(typeof hello)
 const myn1 = arrays2.slice(1,3);
@@ -52,7 +55,8 @@ const allheros = marvel_heros.concat(dc)
 console.log(allheros)
 const anthor_arrays = [1,2,3[1,2,3,4,54],['s','d'],[13,4,5]]
 //  sperad the all element arrays in arrays
-
+//  taking a glsss of cup an the fall dowan then you are see glass will be sprear
+const allheros2 = [...marvel_heros,...dc]
 const real_arrays = anthor_arrays.flat(Infinity)
 console.log(real_arrays)
 console.log(Array.isArray('sameer'))
