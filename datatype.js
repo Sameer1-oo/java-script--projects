@@ -1,7 +1,6 @@
 "use strict ";  //treated like a newer viersion code of java script//
 // alert(3+4)// we are using node js no browser
-console.log(9+
-    3)// code always readable
+console.log(9+3)// code always readable
 
 console.log("sameer")
 let accno=34
@@ -19,4 +18,5 @@ let isd = null// it is object
 // symbol= for unique (use in react js for elemnet)
 // object
 */
+alert(hello)
 console.table([typeof accno, id, isidlooged,sameer,isd]);
