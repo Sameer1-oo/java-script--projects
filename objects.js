@@ -11,22 +11,24 @@
 const mysymbol = Symbol('key1')
 const user ={
     //  mthod object 
-    name: 'sameer' ,
+    name:'sameer' ,
     // always rember comma and right santax
     age :28,
     location:"jaipur",
     email:'sameerjaga@gamil.com',
     [mysymbol] : 'sameer'
-
      //in this the name are actule working like string
     }
+    console.log(user.email);
 //  this is litral method to delacre obejt 
- Object.create
+ Object.create  /// constructer method 
+  
  // singleton method constructive 
  
 //   when you to change
-//  console.log/(user)
+//  console.log(user)
 // console.log(user["email"])
+
 //  right way to exis the object 
 // console.log(user[mysymbol])
 // console.log(typeof user[mysymbol])
@@ -34,13 +36,16 @@ const user ={
 //  we can freez the value of object and nobody can't change the value 
 
 //Object.freeze(user)
+
+// freeze the obejct using this argument ok after any chnages not we seen in this obejct 
+
 user.email='sameerjaga';
 // console.log(user);
 user.greetings = function(){
     console.log(`hello sameer jaga ${this.name}` );
 }
-// console.log(user.greetings())
-//  out put of this undifinf
+ console.log(user.greetings())
+//  out put of this undifined
 
 /* ************************** objects-2*******************************/
 
@@ -67,6 +72,8 @@ const regulaeruser = {
     }
 }
 console.log(regulaeruser.fullname.userfullname.fristname);
+//if you want to chek the full name is exist  or not you can use ? sign like this
+//console.log(regulaeruser?.fullname?.userfullname?.fristname);
 
 //  the nestet object we can define 
 //  optional chaninig
@@ -79,6 +86,9 @@ const obj2 ={
 //  two object can be mreger 
 const merged1 = Object.assign({}, obj1, obj2);
 console.log(merged1)
+const obj3={...obj1,...obj}
+console.log(obj3)
+// this is also a method to merge the object called sperad operator ...
 //  we can store our object in arryas like this 
 const mer = [
     {
@@ -96,6 +106,7 @@ const mer = [
     }
 
 ]
+//  this is way to dclar object in arryas
 mer[1].id
 console.log(mer)
 console.log(tinderuser)
@@ -107,6 +118,11 @@ console.log(Object.entries(tinderuser))
  // we can checked the value has or not 
  console.log(tinderuser.hasOwnProperty("isloggedin"))
 /* ******************************* OBJECTS3*************************************/
+//  destructuring in object
+//  when we want to axise the value of object 
+//  we can use dot notation and bracket notation 
+//  but there is a anthor method to axise the value of object 
+//  this is called destructuring
 const course ={
  coursename : 'js hindi',
  price :999 ,
@@ -121,95 +137,12 @@ const {courseInstructuror:sam} = course
 
 console.log(sam)
 //  this method of dstructuring 
-//  where is dstructure use 
-// const nav = () => {
 
-// }
-// // navbar(company=royalrange)
-// {
-//     "name" : 'sameer ',
-//     "course" : 'java script '
-//     //  the are string from 
-// }
-// //  this  is santak of json  ye jason ki trweatr karga 
+const navbar = () =>{
+    
+}
+navbar(company)
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-// {
-//     "results": [
-//       {
-//         "gender": "female",
-//         "name": {
-//           "title": "Miss",
-//           "first": "Jennie",
-//           "last": "Nichols"
-//         },
-//         "location": {
-//           "street": {
-//             "number": 8929,
-//             "name": "Valwood Pkwy",
-//           },
-//           "city": "Billings",
-//           "state": "Michigan",
-//           "country": "United States",
-//           "postcode": "63104",
-//           "coordinates": {
-//             "latitude": "-69.8246",
-//             "longitude": "134.8719"
-//           },
-//           "timezone": {
-//             "offset": "+9:30",
-//             "description": "Adelaide, Darwin"
-//           }
-//         },
-//         "email": "jennie.nichols@example.com",
-//         "login": {
-//           "uuid": "7a0eed16-9430-4d68-901f-c0d4c1c3bf00",
-//           "username": "yellowpeacock117",
-//           "password": "addison",
-//           "salt": "sld1yGtd",
-//           "md5": "ab54ac4c0be9480ae8fa5e9e2a5196a3",
-//           "sha1": "edcf2ce613cbdea349133c52dc2f3b83168dc51b",
-//           "sha256": "48df5229235ada28389b91e60a935e4f9b73eb4bdb855ef9258a1751f10bdc5d"
-//         },
-//         "dob": {
-//           "date": "1992-03-08T15:13:16.688Z",
-//           "age": 30
-//         },
-//         "registered": {
-//           "date": "2007-07-09T05:51:59.390Z",
-//           "age": 14
-//         },
-//         "phone": "(272) 790-0888",
-//         "cell": "(489) 330-2385",
-//         "id": {
-//           "name": "SSN",
-//           "value": "405-88-3636"
-//         },
-//         "picture": {
-//           "large": "https://randomuser.me/api/portraits/men/75.jpg",
-//           "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
-//           "thumbnail": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
-//         },
-//         "nat": "US"
-//       }
-//     ],
-//     "info": {
-//       "seed": "56d27f4a53bd5441",
-//       "results": 1,
-//       "page": 1,
-//       "version": "1.4"
-//     }
-//   }
-// //   this sample code of api call
